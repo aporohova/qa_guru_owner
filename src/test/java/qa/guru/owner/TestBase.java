@@ -9,7 +9,7 @@ import qa.guru.owner.config.WebDriverConfig;
 
 public class TestBase {
     @BeforeAll
-    static void SettingRunParameters() {
+    static void settingRunParameters() {
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
         Configuration.baseUrl = config.getBaseUrl();
